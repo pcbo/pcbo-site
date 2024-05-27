@@ -7,7 +7,7 @@ export default function Page() {
         gm 🫡
       </h1>
       <p className="mb-4">
-        {`​on a mission to help the next generation of builders succeed.
+        {`​on a mission to help the next generation of builders succeed.}
       </p>
       </br>
       <p className="mb-4">
