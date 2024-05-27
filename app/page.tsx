@@ -7,10 +7,7 @@ export default function Page() {
         gm 🫡
       </h1>
       <p className="mb-4">
-        {`​on a mission to help the next generation of builders succeed.`​}
-      </p>
-      <p className="mb-4">
-        {`​this site is a log to keep myself publicly accountable.`}
+        {`​on a mission to help the next generation of builders succeed. ​this site is a log to keep myself publicly accountable.`​}
       </p>
       <div className="my-8">
         <BlogPosts />
