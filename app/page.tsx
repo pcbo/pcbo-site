@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        gm 🫡
+        gm.
       </h1>
       <p className="mb-4">
         {`​on a mission to help the next generation of builders succeed. ​this site is a log to keep myself publicly accountable.`​}
