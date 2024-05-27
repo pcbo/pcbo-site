@@ -4,10 +4,10 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Welcome to PCBO's building in public:
+        Welcome.
       </h1>
       <p className="mb-4">
-        {`​I'm on a mission to help the next gen of builders succeed. Currently doing that as CEO of Talent Protocol. Tours of duty include: internships, dev, research work, leading product and tech, and founder. Pedro is a fan of: stargate, star trek, total war, and dune.`}
+        {`​On a mission to help the next generation of builders succeed. This site is a log to keep myself publicly accountable.`}
       </p>
       <div className="my-8">
         <BlogPosts />
