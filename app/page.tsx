@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Welcome.
+        Good morning 🫡
       </h1>
       <p className="mb-4">
         {`​On a mission to help the next generation of builders succeed. This site is a log to keep myself publicly accountable.`}
