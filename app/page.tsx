@@ -4,14 +4,14 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Good morning 🫡
+        gm 🫡
       </h1>
       <p className="mb-4">
-        {`​On a mission to help the next generation of builders succeed.
+        {`​on a mission to help the next generation of builders succeed.
       </p>
       </br>
       <p className="mb-4">
-        {`​This site is a log to keep myself publicly accountable.`}
+        {`​this site is a log to keep myself publicly accountable.`}
       </p>
       <div className="my-8">
         <BlogPosts />
