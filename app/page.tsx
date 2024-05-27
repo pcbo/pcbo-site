@@ -9,7 +9,6 @@ export default function Page() {
       <p className="mb-4">
         {`​on a mission to help the next generation of builders succeed.`​}
       </p>
-      </br>
       <p className="mb-4">
         {`​this site is a log to keep myself publicly accountable.`}
       </p>
