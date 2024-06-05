@@ -1,0 +1,27 @@
+---
+title: 'css cache busting and git renaming issue'
+publishedAt: '2024-06-05'
+summary: 'learned about cache busting technique for css files on Cloudflare and fix a file renaming issue with git.'
+---
+
+### log entry 7: Cloudflare caching and git file rename issues
+
+**Cloudflare cache busting:**
+- Cloudflare caches css files, causing outdated styles to persist
+- to bust the cache, Leal appended a version query param to the css file url
+  - e.g., `href="css/talent-protocol-v2.webflow.css?v=1"`
+- the value after the url can be any string, it acts as a cache buster
+
+**git file renaming:**
+- wanted to rename `Coinbase_logo.svg` to `coinbase_logo.svg` for consistency reasons
+- git doesn't automatically track renames with different casing
+- Leal used the `git mv` command to force the rename:
+  - `git mv images/Coinbase_logo.svg images/coinbase_logo.svg`
+
+**gratitude:**
+- learned these techniques thanks to Leal's guidance. Dr. Peter Venkman would be proud: (https://warpcast.com/pcbo/0x66f25aa3)
+
+**learnings:**
+- Cloudflare caching can cause outdated css to persist, be mindful for future css updates
+- cache busting with versioned query params is a simple solution
+- git doesn't automatically track renames with casing changes, use consistent casing for file names from the start
