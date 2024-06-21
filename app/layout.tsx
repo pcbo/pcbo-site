@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   description: 'pcbo - bulding in public',
   openGraph: {
-    title: 'pcbo - bulding in public',
-    description: 'pcbo - bulding in public',
+    title: 'bulding in public with pcbo',
+    description: 'born to build, one log entry at a time',
     url: baseUrl,
     siteName: 'pcbo - bulding in public',
     locale: 'en_US',
