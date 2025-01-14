@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/goal",
+      "destination": "https://goal-haven.vercel.app"
+    }
+  ]
+}
