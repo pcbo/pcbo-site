@@ -25,6 +25,7 @@ export function BlogPosts() {
           }
           return 1;
         })
+        .slice(0, 4)
         .map((post) => (
           <Link
             key={post.slug}
@@ -32,7 +33,7 @@ export function BlogPosts() {
             href={`/blog/${post.slug}`}
           >
             <div className="flex flex-col">
-              <p className="text-sm text-neutral-400">
+              <p className="text-xs text-neutral-400">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <h2 className="text-neutral-100 group-hover:text-neutral-300 transition-colors">
