@@ -31,18 +31,15 @@ export function BlogPosts() {
             className="block group"
             href={`/blog/${post.slug}`}
           >
-            <div className="flex flex-col space-y-1">
-              <div className="flex items-center space-x-2">
-                <p className="text-sm text-neutral-400">
-                  {formatDate(post.metadata.publishedAt, false)}
-                </p>
-                <span className="text-neutral-400">·</span>
-                <h2 className="text-neutral-100 group-hover:text-neutral-300 transition-colors">
-                  {post.metadata.title}
-                </h2>
-              </div>
+            <div className="flex flex-col">
+              <p className="text-sm text-neutral-400">
+                {formatDate(post.metadata.publishedAt, false)}
+              </p>
+              <h2 className="text-neutral-100 group-hover:text-neutral-300 transition-colors">
+                {post.metadata.title}
+              </h2>
               {post.metadata.summary && (
-                <p className="text-sm text-neutral-400">
+                <p className="text-sm text-neutral-400 mt-1">
                   {truncateSummary(post.metadata.summary)}
                 </p>
               )}
