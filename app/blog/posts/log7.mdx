@@ -1,27 +1,31 @@
 ---
-title: 'css cache busting and git renaming issue'
-publishedAt: '2024-06-05'
-summary: 'learned about cache busting technique for css files on Cloudflare and fix a file renaming issue with git.'
+title: "CSS Cache Busting and Git Renaming Issue"
+publishedAt: "2024-06-05"
+summary: "Learned about cache busting technique for CSS files on Cloudflare and fix a file renaming issue with Git"
 ---
 
-### log entry 7: Cloudflare caching and git file rename issues
+### Log Entry 7: Cloudflare Caching and Git File Rename Issues
 
-**Cloudflare cache busting:**
-- Cloudflare caches css files, causing outdated styles to persist
-- to bust the cache, Leal appended a version query param to the css file url
+**Cloudflare Cache Busting:**
+
+- Cloudflare caches CSS files, causing outdated styles to persist
+- To bust the cache, Leal appended a version query param to the CSS file URL
   - e.g., `href="css/talent-protocol-v2.webflow.css?v=1"`
-- the value after the url can be any string, it acts as a cache buster
+- The value after the URL can be any string, it acts as a cache buster
 
-**git file renaming:**
-- wanted to rename `Coinbase_logo.svg` to `coinbase_logo.svg` for consistency reasons
-- git doesn't automatically track renames with different casing
+**Git File Renaming:**
+
+- Wanted to rename `Coinbase_logo.svg` to `coinbase_logo.svg` for consistency reasons
+- Git doesn't automatically track renames with different casing
 - Leal used the `git mv` command to force the rename:
   - `git mv images/Coinbase_logo.svg images/coinbase_logo.svg`
 
-**gratitude:**
-- learned these techniques thanks to Leal's guidance. [Dr. Peter Venkman would be proud](https://warpcast.com/pcbo/0x66f25aa3)
+**Gratitude:**
 
-**learnings:**
-- Cloudflare caching can cause outdated css to persist, be mindful for future css updates
-- cache busting with versioned query params is a simple solution
-- git doesn't automatically track renames with casing changes, use consistent casing for file names from the start
+- Learned these techniques thanks to Leal's guidance. [Dr. Peter Venkman would be proud](https://warpcast.com/pcbo/0x66f25aa3)
+
+**Learnings:**
+
+- Cloudflare caching can cause outdated CSS to persist, be mindful for future CSS updates
+- Cache busting with versioned query params is a simple solution
+- Git doesn't automatically track renames with casing changes, use consistent casing for file names from the start

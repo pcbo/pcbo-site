@@ -13,7 +13,14 @@ export default function Page() {
           height={64}
           className="rounded-full mr-4"
         />
-        <h1 className="text-3xl font-bold tracking-tighter">gm</h1>
+        <div>
+          <h1 className="text-3xl font-bold tracking-tighter">gm</h1>
+          <p className="text-neutral-400 mt-2 max-w-xl">
+            3-time founder (1 exit). Building Talent Protocol to help builders
+            prove their reputation onchain. 10+ years in HR tech, still
+            shipping.
+          </p>
+        </div>
       </div>
       <div className="mt-8">
         <BlogPosts />

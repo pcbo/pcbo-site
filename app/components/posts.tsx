@@ -27,12 +27,12 @@ export function BlogPosts() {
                   {formatDate(post.metadata.publishedAt, false)}
                 </p>
                 <span className="text-neutral-400">·</span>
-                <h2 className="text-neutral-100 group-hover:text-neutral-400 transition-colors">
+                <h2 className="text-neutral-100 group-hover:text-neutral-300 transition-colors">
                   {post.metadata.title}
                 </h2>
               </div>
               {post.metadata.summary && (
-                <p className="text-sm text-neutral-400">
+                <p className="text-sm text-neutral-400 truncate">
                   {post.metadata.summary}
                 </p>
               )}
