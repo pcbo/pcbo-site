@@ -26,9 +26,9 @@ export default function BuilderScore() {
       href="https://app.talentprotocol.com/builderscore/d43f3352-c4ac-4c32-8eba-a7277a2f86aa"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm text-gray-500 hover:underline"
+      className="text-neutral-400 text-sm hover:text-neutral-300 transition-colors"
     >
-      Builder Score: <span className="font-semibold">{score}</span>
+      Builder Score: <span className="text-neutral-300">{score}</span> ↗
     </a>
   );
 }
