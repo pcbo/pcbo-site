@@ -58,6 +58,7 @@ export default function RootLayout({
           <Analytics />
           <SpeedInsights />
         </main>
+        <footer className="text-sm text-neutral-400">© 2025 – PCBO Inc.</footer>
       </body>
     </html>
   );
