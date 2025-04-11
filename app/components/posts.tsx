@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { formatDate, getBlogPosts } from "app/blog/utils";
 
@@ -23,12 +21,12 @@ export function BlogPosts() {
     return 1;
   });
 
-  const displayedBlogs = sortedBlogs.slice(0, 4);
-  const hasMorePosts = sortedBlogs.length > 4;
+  // Only show the most recent 4 posts
+  const recentPosts = sortedBlogs.slice(0, 4);
 
   return (
     <div className="space-y-4">
-      {displayedBlogs.map((post) => (
+      {recentPosts.map((post) => (
         <Link
           key={post.slug}
           className="block group"
@@ -50,12 +48,12 @@ export function BlogPosts() {
         </Link>
       ))}
 
-      {hasMorePosts && (
+      {sortedBlogs.length > 4 && (
         <Link
           href="/blog"
           className="text-sm text-neutral-400 hover:text-neutral-300 transition-colors mt-4 inline-block"
         >
-          Show more
+          Show all posts
         </Link>
       )}
     </div>
