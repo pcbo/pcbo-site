@@ -10,10 +10,10 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "pcbo - bulding in public",
-    template: "%s | pcbo - bulding in public",
+    default: "PCBO",
+    template: "%s | PCBO",
   },
-  description: "pcbo - bulding in public",
+  description: "PCBO",
   openGraph: {
     title: "bulding in public with pcbo",
     description: "born to build, one log entry at a time",
@@ -32,6 +32,15 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  twitter: {
+    title: "PCBO",
+    card: "summary_large_image",
+  },
+  verification: {
+    google: "google",
+    yandex: "yandex",
+    yahoo: "yahoo",
   },
 };
 
